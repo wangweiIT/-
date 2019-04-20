@@ -12,4 +12,4 @@
 + 创建和切换分支
   - 查看当前分支 输入 `git branch`
   - 创建分支 输入 `git branch dev(新的分支名)`
-  - 切换分支 输入 `git checkout dev`
+  - 切换分支 输入 `git checkout dev` yi
