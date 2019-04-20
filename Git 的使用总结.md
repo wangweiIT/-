@@ -66,6 +66,14 @@
   + 我们在push时，加上了 `-u`参数后，在下次push或者pull时候，我们只要写上 `git push`或者`git pull`就能上传代码了，（git 会把当前分支与远程的指定分支进行了关联。`git push origin master`）
   + 例如执行完 `git push orgin -u master`后进行 `git push`和`git pull`就可以了。
 
+#### stash用法
+  + 输入`git stash`会把所有未提交的修改（包括暂存的和非暂存的）都保存起来，用于后续恢复当前工作目录。通过 `git stash`命令推送一个新的储藏，当前的工作目录就干净了
+  + 推荐使用`git stash save 'message'` 来替换`git stash`。可以添加说明信息
+  + 输入`git stash pop`恢复之前缓存的工作目录
+  + 输入`git stash list`查看堆里面的记录，若执行了`git stash pop`则改记录中不会存在已经被弹出的该条记录。
+  + 输入`git stash apply`，功能和`git stash pop`一样，但是它不会删除被恢复的该条 stash记录
+
+
 
 
 
