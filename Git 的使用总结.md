@@ -3,7 +3,7 @@
 ## Git 常用的命令行
 + 初始化本地仓库： 输入 `git init` 将在本地指定目录创建一个隐藏目录`.git`用来保存每次的提交
 
-+ 配置提交时的个人信息：输入`git config user.name 'NAME'`和`git config user.email 'HUAWEI@HUAWEI.COM'`
++ 配置提交时的个人信息：输入`git config --global user.name 'NAME'`和`git config --golbal user.email 'HUAWEI@HUAWEI.COM'`
 
 + 提交代码： 输入`git add .[需要提交的代码目录]`和`git commit -m '提交的信息'`
 
@@ -44,10 +44,10 @@
 #### 如何同步远程仓库的分支，并进行切换到相应的分支
   + 输入 `git fetch`，抓取远程仓库的所有分支
   + 有了 `fetch` 的动作后，才能够将本地代码切换到远程代码库对应的任意分支中
-  + 输入`git checkout 分支名`,拉取远程分支到本地对应的分支
+  + 输入`git checkout 分支名`,切换分支，拉取远程分支到本地对应的分支
 #### 如何删除本地和远程仓库的分支
   + 输入`git branch -d 分支名` ，删除本地分支
-  + 输入`git push origin -d 分支名`，直接删除远程仓库的分支
+  + 输入`git push origin -d 分支名`，直接删除远程仓库的分支 或者直接在`gitHub`上删除
 #### 两种获取代码的方式：
   + 方式一：`git pull [地址] 分支名`
     - 拉取代码，输入命令： `git pull https://github.com/wangweiIT/-.git master `
@@ -55,6 +55,10 @@
 
   + 方式二：`git clone [地址]`
     - 不需要本地初始化git仓库
+#### ssh方式上传代码
+- 公钥 私钥，两者之间是有关联的。
+- 生成公钥和私钥
+
 
 
 
