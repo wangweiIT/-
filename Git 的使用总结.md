@@ -22,7 +22,7 @@
   - 切换分支 输入 `git checkout dev` 
   - 合并分支输入`git merge dev`，将dev分支合并到当前的分支中去  注：通过本地创建分支，然后合并的方式，就可以修改bug 然后再何入主干。
   - 删除分支dev，不能处于dev分支下操作，输入 `git branch -d dev`
-
+dev
   
 
   
