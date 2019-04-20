@@ -36,10 +36,16 @@
   ### 提交代码到 `github` 上去
   + 输入命令`git push ssh路径 分支名称`
     如: `git push https://github.com/wangweiIT/-.git master`
-  ### 拉取代码和克隆仓库
-    + 拉取代码，输入命令： `git pull https://github.com/wangweiIT/-.git master `
-  
+    
+### 拉取代码和克隆仓库
 
+#### 两种获取代码的方式：
+  + 方式一：`git pull [地址] 分支名`
+    - 拉取代码，输入命令： `git pull https://github.com/wangweiIT/-.git master `
+    - 前提是本地要初始化一个git仓库 `git init`,然后再`pull`
+
+  + 方式二：`git clone [地址]`
+    - 不需要本地初始化git仓库
 
 
 
