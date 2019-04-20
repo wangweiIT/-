@@ -72,6 +72,14 @@
   + 输入`git stash pop`恢复之前缓存的工作目录
   + 输入`git stash list`查看堆里面的记录，若执行了`git stash pop`则改记录中不会存在已经被弹出的该条记录。
   + 输入`git stash apply`，功能和`git stash pop`一样，但是它不会删除被恢复的该条 stash记录
+  + 输入`git stash branch 分支名` 从stash中创建分支，若创建成功，则会丢弃改stash的储藏
+##### 如何使用 stash 来解决问题单，再次合并到 master 分支中去
+  + 主要分为以下几步：
+    - 首先在master创建一个stash：`git stash save '这是修改bug'`
+    - 通过该stash创建一个分支：`git stash branch 分支名称`
+    - 回到master 进行分支的合并：`git merge 分支名称`，若有冲突解决冲突
+    - 提交代码即可
+
 
 
 
