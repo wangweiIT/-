@@ -12,5 +12,5 @@
 + 创建和切换分支
   - 查看当前分支 输入 `git branch`
   - 创建分支 输入 `git branch dev(新的分支名)`
-  - 放弃本次的修改（没有commit提交） 输入 `git checkout -- 文件名`
-  - 切换分支 输入 `git checkout dev` yi
+  - 放弃本次的修改（没有commit提交） 输入 `git checkout`
+  - 切换分支 输入 `git checkout dev` 
