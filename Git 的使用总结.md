@@ -36,6 +36,8 @@
   ### 提交代码到 `github` 上去
   + 输入命令`git push ssh路径 分支名称`
     如: `git push https://github.com/wangweiIT/-.git master`
+  ### 拉取代码和克隆仓库
+    + 拉取代码，输入命令： `git pull https://github.com/wangweiIT/-.git master `
   
 
 
