@@ -33,6 +33,10 @@
 ## GitHub
 + 只不过是一个网站，允许别人通过`git`上次代码的功能
 
+  ### 提交代码到 `github` 上去
+  + 输入命令`git push ssh路径 分支名称`
+    如: `git push https://github.com/wangweiIT/-.git master`
+
 
 
 
