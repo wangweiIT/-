@@ -26,8 +26,6 @@
 
   - 合并分支输入`git merge dev`，将dev分支合并到当前的分支中去  注：通过本地创建分支，然后合并的方式，就可以修改bug 然后再何入主干。
 
-  - 删除分支dev，不能处于dev分支下操作，输入 `git branch -d dev(分支名)`
-
     如果同时在`master`和`dev`分支上都`commit`了代码则在合并时候，会出现冲突，需要手动处理后再`commit`提交
     
 ## GitHub
@@ -45,8 +43,11 @@
   + 查看本地所有分支：输入`git branch`
 #### 如何同步远程仓库的分支，并进行切换到相应的分支
   + 输入 `git fetch`，抓取远程仓库的所有分支
+  + 有了 `fetch` 的动作后，才能够将本地代码切换到远程代码库对应的任意分支中
   + 输入`git checkout 分支名`,拉取远程分支到本地对应的分支
-
+#### 如何删除本地和远程仓库的分支
+  + 输入`git branch -d 分支名` ，删除本地分支
+  + 输入`git push origin -d 分支名`，直接删除远程仓库的分支
 #### 两种获取代码的方式：
   + 方式一：`git pull [地址] 分支名`
     - 拉取代码，输入命令： `git pull https://github.com/wangweiIT/-.git master `
