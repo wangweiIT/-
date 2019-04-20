@@ -1,6 +1,6 @@
 # Git 的使用总结
 
-### Git 常用的命令行
+## Git 常用的命令行
 + 初始化本地仓库： 输入 `git init` 将在本地指定目录创建一个隐藏目录`.git`用来保存每次的提交
 
 + 配置提交时的个人信息：输入`git config user.name 'NAME'`和`git config user.email 'HUAWEI@HUAWEI.COM'`
@@ -17,33 +17,43 @@
 
 + 创建和切换分支
   - 查看当前有哪些分支 输入 `git branch`
+
   - 创建分支 输入 `git branch dev(新的分支名)`
+
   - 放弃本次的修改（没有commit提交） 输入 `git checkout [.放弃所有文件] 或者 [指定的文件名]`
+
   - 切换分支 输入 `git checkout dev` 
+
   - 合并分支输入`git merge dev`，将dev分支合并到当前的分支中去  注：通过本地创建分支，然后合并的方式，就可以修改bug 然后再何入主干。
-  - 删除分支dev，不能处于dev分支下操作，输入 `git branch -d dev`
-master 分支输入代码
-  
 
-  
+  - 删除分支dev，不能处于dev分支下操作，输入 `git branch -d dev(分支名)`
 
-  
+    如果同时在`master`和`dev`分支上都`commit`了代码则在合并时候，会出现冲突，需要手动处理后再`commit`提交
+    
+## GitHub
++ 只不过是一个网站，允许别人通过`git`上次代码的功能
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   ```md
   git checkout . ``#本地所有修改的。没有的提交的，都返回到原来的状态
