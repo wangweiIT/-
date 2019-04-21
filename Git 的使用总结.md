@@ -61,7 +61,7 @@
   + 输入`ssh-keygen -t rsa -C "邮箱"` 本地生成公钥和私钥
 
 #### 上传代码，先`pull` 再`push`
-  + 什么变量存储 远程仓库地址，输入 `git remote add orgin（变量名） 远程仓库地址`
+  + 变量存储 远程仓库地址，输入 `git remote add orgin（变量名） 远程仓库地址`
   + 以后提交代码时候就可以用变量名替换了。
   + 我们在push时，加上了 `-u`参数后，在下次push或者pull时候，我们只要写上 `git push`或者`git pull`就能上传代码了，（git 会把当前分支与远程的指定分支进行了关联。`git push origin master`）
   + 例如执行完 `git push orgin -u master`后进行 `git push`和`git pull`就可以了。
@@ -83,28 +83,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  ```md
-  git checkout . ``#本地所有修改的。没有的提交的，都返回到原来的状态
-  git stash ``#把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
-  git reset --hard HASH ``#返回到某个节点，不保留修改。
-  git reset --soft HASH ``#返回到某个节点。保留修改
-  ```
