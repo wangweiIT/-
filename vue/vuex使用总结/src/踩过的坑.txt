@@ -1,0 +1,56 @@
+1.使用mapactions  mapmutations mapgetters
+如果涉及到传参数的时候，需要如下处理，不能够直接传
+...mapActions({addFun: 'moduleA/addFun',subFun: 'moduleA/subFun'}),
+	addNum(){
+		debugger;
+		this.addFun(3);
+	},
+	subNum(){
+		debugger;
+		this.subFun(3);
+	}
+
+
+index.js
+moduleA：
+actions: {
+    addFun({commit}, n){ //对象结构，直接提取出 commit
+      debugger;
+      commit('add', n);
+    },
+    subFun(context, n){
+      debugger;
+      context.commit('sub', n);
+    }
+  }
+  
+映射的时候要注意是否有命名空间（存在modules时的情况），此处的moduleA 中namespaced 为true 要带上命名空间
+
+
+
+2.在进行映射state的时，如果存在命名空间的问题，不能直接映射，需要调用函数返回后取值，并且函数不能够是箭头函数
+
+computed: {
+	/*currentVal(){
+		return this.$store.state.moduleA.count
+	},*/
+	/*computeVal(){
+		return this.$store.getters['moduleA/getStateCount']
+	}*/
+	...mapState({
+			//用了modules之后，mapstate那样写找不到，要这样写，把对应的module加上
+			currentVal: function(state){debugger;return state.moduleA.count}
+			//currentVal: 'moduleA.count'  这样写找不到对应的module
+			//若没有用module 可以这样写：currentVal: 'count' 
+		}),
+
+	...mapGetters({
+			computeVal: 'moduleA/getStateCount' 
+		})
+}
+
+3.如果vue中的变量名和映射中一直可以直接使用类似
+...mapState(['testStoreData'])
+
+如果不一致，则使用对象属性匹配
+...mapActions({addFun: 'moduleA/addFun',subFun: 'moduleA/subFun'}),
