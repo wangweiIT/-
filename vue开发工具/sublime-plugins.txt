@@ -1,0 +1,35 @@
+﻿1. AdvancedNewFile插件(重点) :
+ctrl+alt+n ,下方会出现一个填写路径的框，你可在内直接填写文件名，将文件保存在默认路径；也可自己编写路径保存。
+https://blog.csdn.net/liangrongliu1991/article/details/66475914
+
+2.Emmet(重点)  
+简介：Emmet作为zen coding的升级版，对于前端来说，可是必备插件，如果你对它还不太熟悉，可以在其官网（http://docs.emmet.io/）上看下具体的演示视频。
+
+3.JSFormat (按快捷键Ctrl+Alt+F即可格式化当前的js文件了)
+Javascript的代码格式化插件
+简介：很多网站的JS代码都进行了压缩，一行式的甚至混淆压缩，这让我们看起来很吃力。而这个插件能帮我们把原始代码进行格式的整理，包括换行和缩进等等，是代码一目了然，更快读懂~
+
+4.javascript-API-Completions(重点) 
+支持Javascript、JQuery、Twitter Bootstrap框架、HTML5标签属性提示的插件，是少数支持sublime text 3的后缀提示的插件，HTML5标签提示sublime text 3自带，不过JQuery提示还是很有用处的，也可设置要提示的语言。
+
+5.AutoFileName(重点)
+快速列出你想引用的文件夹里面所有文件的名字，比如想引用test/img/1.png。只需要输入/img,该插件就会自动提示/img下面的所有文件名
+
+6.BracketHighlighter
+高亮显示[], (), {}, “”, ”, <tag></tag>符号，便于查看起始和结束标记。
+
+7.DocBlockr
+注释插件，生成幽美的注释。标准的注释，包括函数名、参数、返回值等，并以多行显示，省去手动编写。
+
+8.SideBarEnhancements
+可自定义浏览器预览的快捷键。
+安装此插件，点击工具栏的preferences > package setting > side bar > Key Building-User，输入以下代码，按F1~F3分别在chrome，firefox，edge浏览器预览效果，也可以自己定义快捷键，最后注意代码中的浏览器路径要以自己电脑里的文件路径为准。
+
+9.Markdown Editing //Markdown编辑和语法高亮支持 
+
+10.Vue Syntax Highlight(重点)
+vue 进行高亮显示
+
+11 Sublime-HTMLPrettify(重点) 
+格式化 html css js的代码
+
