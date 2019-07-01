@@ -1,0 +1,16 @@
+VUE:
+
+1.vuex的使用
+  划分多个modules，设置命名空间，以及使用辅助函数（mapState、mapGetteres、mapActions、mapMutations）的使用，见\vue\vuex使用总结
+  
+2.vue国际化插件，vue-i18n:
+  使用i18n进行国际化配置，通过点击按钮实现页面的国际化切换，通过路由meta元数据信息，加载默认的语言，见\vue\vue-i18n国际化
+  
+3.vue中插槽的使用
+  插槽分为：匿名插槽，具名插槽，作用域插槽
+            对于作用域插槽，样式父组件说了算，但是内容由子组件属性绑定的作用域值来决定，注意父子组件中写法
+			
+4.Mock接口数据，有两种方式
+  方式一： 通过Mock.js
+  方式二：通过本地启用node.js的服务，进行模拟数据 在webpack.dev.config.js中添加node服务 引入data.json作为数据源，在devserv中定义接口
+  方式一和方式二不要进行混用
